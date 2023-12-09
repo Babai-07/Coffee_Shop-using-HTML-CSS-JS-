@@ -14,5 +14,5 @@ function toggleMenu(){
 
 }
 $('#myCarousel').carousel({
-    interval: 1200
+    interval:  1200
 });

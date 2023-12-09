@@ -2,202 +2,243 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StarBucks</title>
-    <link rel="icon" href="./logo.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <link href="index.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
-    
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StarBucks</title>
+  <link rel="icon" href="./logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="index.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
 </head>
 
 <body>
-    <section>
-        <div class="circle"></div>
-        <header id="head">
-            <a href="#" class="logo"><img src="logo.png"></a>
-            <div class="toggle" onclick="toggleMenu()"></div>
-            <ul class="navigation">
-                <li><a href="#head">Home</a></li>
-                <li><a href="#menucard">Menu</Menu></a></li>
-                <li><a href="#imgsl">What's New</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </header>
-        <div class="content" >
-            <div class="textBox" data-aos="fade-right">
-                <h2>It's not just Coffee<br>It's <span>Starbucks</span> </h2>
-                <p>Starbucks serves hot and cold drinks, whole-bean coffee,
-                    micro-ground instant coffee, espresso, caffe latte, full
-                    and loose-leaf teas, juices, Frappuccino beverages, pastries,
-                    and snacks. Some offerings are seasonal or specific to the
-                    locality of the store.
-                </p>
-                <a href="#">Learn More</a>
-            </div>
-            <div class="imgBox" data-aos="fade-up-left">
-                <img src="img1.png" class="starbucks"/>
+  <section>
+    <div class="circle"></div>
+    <header id="head">
+      <a href="#" class="logo"><img src="logo.png"></a>
+      <div class="toggle" onclick="toggleMenu()"></div>
+      <ul class="navigation">
+        <li><a href="#head">Home</a></li>
+        <li><a href="#menucard">Menu</Menu></a></li>
+        <li><a href="#imgsl">What's New</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+    <div class="content">
+      <div class="textBox">
+        <h2>It's not just Coffee<br>It's <span>Starbucks</span> </h2>
+        <p>Starbucks serves hot and cold drinks, whole-bean coffee,
+          micro-ground instant coffee, espresso, caffe latte, full
+          and loose-leaf teas, juices, Frappuccino beverages, pastries,
+          and snacks. Some offerings are seasonal or specific to the
+          locality of the store.
+        </p>
+        <a href="#">Learn More</a>
+      </div>
+      <div class="imgBox">
+        <img src="img1.png" class="starbucks" />
 
-            </div>
+      </div>
+    </div>
+    <ul class="thumb">
+      <li><img src="thumb1.png" onclick="imgslider('img1.png');changeCircleColor('#017143')" /></li>
+      <li><img src="thumb2.png" onclick="imgslider('img2.png');changeCircleColor('#eb7495')" /></li>
+      <li><img src="thumb3.png" onclick="imgslider('img3.png');changeCircleColor('#d752b1')" /></li>
+
+    </ul>
+    <ul class="sci">
+      <li><a href="#"><img src="facebook.png" /></a></li>
+      <li><a href="#"><img src="instagram.png" /></a></li>
+      <li><a href="#"><img src="twitter.png" /></a></li>
+
+    </ul>
+  </section>
+  <h1 id="imgsl">On <span>Demanding</span> Now</h1>
+  <div class="sliderBGbox">
+    <div class="imgSlider1">
+
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
         </div>
-        <ul class="thumb">
-            <li><img src="thumb1.png" onclick="imgslider('img1.png');changeCircleColor('#017143')"/></li>
-            <li><img src="thumb2.png" onclick="imgslider('img2.png');changeCircleColor('#eb7495')"/></li>
-            <li><img src="thumb3.png" onclick="imgslider('img3.png');changeCircleColor('#d752b1')"/></li>
-
-        </ul>
-        <ul class="sci">
-            <li><a href="#"><img src="facebook.png"/></a></li>
-            <li><a href="#"><img src="instagram.png"/></a></li>
-            <li><a href="#"><img src="twitter.png"/></a></li>
-
-        </ul>
-    </section>
-    <h1 id="imgsl">On Demanding Now</h1>
-
-    <div class="imgSlider1" >
-      <div id="myCarousel" class="carousel slide" data-mdb-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp" class="d-block w-100" alt="Wild Landscape" />
-            </div>
-            <div class="carousel-item">
-                <img src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp" class="d-block w-100" alt="Camera" />
-            </div>
-            <div class="carousel-item">
-                <img src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp" class="d-block w-100" alt="Exotic Fruits" />
-            </div>
+          <div class="carousel-item active">
+            <img src="imgSlider/starBucks ss1.jpg" class="d-block w-100" alt="img 1 is not found">
+          </div>
+          <div class="carousel-item">
+            <img src="imgSlider/starBucks ss2.jpg" class="d-block w-100" alt="img 2 is not found">
+          </div>
+          <div class="carousel-item">
+            <img src="imgSlider/starBucks ss3.jpg" class="d-block w-100" alt="img 3 is not found">
+          </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
         </button>
-    </div>
-     
-   <!-- <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="sliderimg" src="slideimg3.jpeg" class="d-block w-100" alt="Image not found">
-              </div>
-              <div class="carousel-item">
-                <img src="slideimg2.jpeg" class="d-block w-100" alt="Image not found">
-              </div>
-              <div class="carousel-item">
-                <img src="slideimg1.jpeg" class="d-block w-100" alt="Image not found">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div> -->
-    </div>
-    <h1 id="menucard">Latest Offerings</h1>
+      </div>
 
-    <div class="cardBox" >
-    <div class="row row-cols-1 row-cols-md-2 g-4">
-        <div class="col">
-          <div class="card">
-            <img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Large/webP/104014.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Mocha Cookie Latte  ₹404.50</h5>
-              <p class="card-text">Our Mocha Cookie crumble Latte is a deliciously flavoured mocha indulgence - Hot coffee meets chocolate and cookies for a perfect combination. </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Large/webP/104008.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Mocha Cookie Crumble Frappuccino ₹450.0</h5>
-              <p class="card-text">A perfect blend of coffee, vanilla flavour, milk and cocoa powder. Finished with delicious chocolate whipped cream and cookie crumbs.Allergens-Wheat, Milk and Soy.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Large/webP/104018.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Iced Mocha Cookie Crumble ₹505.75</h5>
-              <p class="card-text">A mix of cocoa powder, Vanilla flavour and espresso shot served on milk and ice, topped with delicious chocolate whipped cream and cookie crumbs.Allergens-Wheat, Milk and Soy.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Large/webP/114038.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Strawberry Acai Lemonade Refresher ₹499.50</h5>
-              <p class="card-text">Sweet strawberry flavours accented by açaí notes, shaken with ice and strawberry pieces — a welcoming sweet spot of refreshment. Serving size (ml)/Calories (kcal) - Tall: 354 ML, 88 kcal.</p>
-            </div>
+
+    </div>
+  </div>
+  <h1 id="menucard">Latest <span>Offerings</span></h1>
+  <!-- card box start  -->
+  <div class="cardBox">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Large/webP/104014.webp"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Mocha Cookie Latte ₹404.50</h5>
+            <p class="card-text">Our Mocha Cookie crumble Latte is a deliciously flavoured mocha indulgence - Hot coffee
+              meets chocolate and cookies for a perfect combination. </p>
           </div>
         </div>
       </div>
-      
-    </div>
-    <div class="Lset">
-      <div class="Lastbox1">
-      <h1>Your Opinion</h1>
-     
-      <div class="From1">
-        <div class="textBox">
-          <input type="text1" placeholder="Full Name" />
+      <div class="col">
+        <div class="card">
+          <img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Large/webP/104008.webp"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Mocha Cookie Crumble Frappuccino ₹450.0</h5>
+            <p class="card-text">A perfect blend of coffee, vanilla flavour, milk and cocoa powder. Finished with
+              delicious chocolate whipped cream and cookie crumbs.Allergens-Wheat, Milk and Soy.</p>
+          </div>
         </div>
-        <div class="text1">
-          <input type="text" placeholder="Gmail? "/>
-        </div>
-        <div class="text1">
-          <input type="text" placeholder="What did You like/dislike plese let us know"/>
-        </div>
-        <div class="text1">
-          <input type="date" />
-        </div>
-        <div class="submit">
-          <button>SUBMIT</button>
-        </div>
-        
       </div>
-      
-      
-      <!-- <hr/> -->
-    </div>
-    <div class="map1">
-      <h1>Our Location</h1>
-      <span class="map2"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117925.33439927726!2d88.34735275!3d22.53542735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1691778211007!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></span>
+      <div class="col">
+        <div class="card">
+          <img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Large/webP/104018.webp"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Iced Mocha Cookie Crumble ₹505.75</h5>
+            <p class="card-text">A mix of cocoa powder, Vanilla flavour and espresso shot served on milk and ice, topped
+              with delicious chocolate whipped cream and cookie crumbs.Allergens-Wheat, Milk and Soy.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Large/webP/114038.webp"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Strawberry Acai Lemonade Refresher ₹499.50</h5>
+            <p class="card-text">Sweet strawberry flavours accented by açaí notes, shaken with ice and strawberry pieces
+              — a welcoming sweet spot of refreshment. Serving size (ml)/Calories (kcal) - Tall: 354 ML, 88 kcal.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Large/webP/104008.webp"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Mocha Cookie Crumble Frappuccino ₹450.0</h5>
+            <p class="card-text">A perfect blend of coffee, vanilla flavour, milk and cocoa powder. Finished with
+              delicious chocolate whipped cream and cookie crumbs.Allergens-Wheat, Milk and Soy.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Large/webP/104008.webp"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Mocha Cookie Crumble Frappuccino ₹450.0</h5>
+            <p class="card-text">A perfect blend of coffee, vanilla flavour, milk and cocoa powder. Finished with
+              delicious chocolate whipped cream and cookie crumbs.Allergens-Wheat, Milk and Soy.</p>
+          </div>
+        </div>
+      </div>
+
     </div>
 
   </div>
+  <!-- card box end  -->
+  <!-- from box starts  -->
+
+  <div class="contactBox">
+    <div class="contactRow">
+      <div class="row">
+        <!-- <div class="cont1 col-4">
+          <div class="textBox">
+            <h1>Contact Us</h1>
+            <p>We are here to assist you! If you have any question or
+              need assistance, please feel free to reach out to us.
+            </p>
+            <p> You can also email us. <br>
+              Click here to reveal email address
+              <a href="#">https://veilmail.io/e/FkKh7o</a>
+            </p>
+            <p>We use VeilMail.io to protect your email address from spam</p>
+          </div>
+        </div> -->
+        <div class="cont2 col-7 d-flex justify-content-center">
+          <div class="frombox1 bg-primar m-5">
+            <h1>Contact From</h1>
+            <div class="from1">
+              <p class="m-0 p-0 pb-2">Your Name: </p>
+              <input type="text" class="rounded outline-none">
+            </div>
+            <div class="from1">
+              <p class="m-0 p-0 pb-2">Your Email: </p>
+              <input type="text" class="rounded ">
+            </div>
+            <div class="from1">
+              <p class="m-0 p-0 pb-2 "> Your Message: </p>
+              <textarea name="" id="" cols="30" rows="6" class="w-100 rounded"></textarea>
+            </div>
+            <button>Send Message</button>
+          </div>
+
+        </div>
+        <div class="mapBox col-4 mt-5 me-5">
+          <div class="mapBox1 m-5">
+            <!-- <div id="sideBox">hii</div> -->
+            <div id="map" class="position-relative"><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14743.956035886102!2d88.3918931!3d22.50459555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0271628f2ad44d%3A0xed79e7af11c398bd!2sCEAT%20Shoppe%2C%20Bharat%20Tyres!5e0!3m2!1sen!2sin!4v1700854233184!5m2!1sen!2sin"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+
+                ></iframe></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footerbox start  -->
   <footer class="Fbox">
     <div class="footerBox">
-    <a href="#" class="logo"><img src="logo.png"></a>
-    <ul>
+      <a href="#" class="logo"><img src="logo.png"></a>
+      <ul>
         <li><a href="#">About Us</a></li>
         <li><a href="#">Our Heritage</Menu></a></li>
         <li><a href="#">Our Company</a></li>
         <li><a href="#">Coffeehouse</a></li>
-    </ul>
-    <ul>
+      </ul>
+      <ul>
         <li><a href="#">Responsibility</a></li>
         <li><a href="#">Community</Menu></a></li>
         <li><a href="#">Ethical Sourcing</a></li>
         <li><a href="#">Environment</a></li>
         <li><a href="#">Diversity</a></li>
-    </ul>
-    <ul>
+      </ul>
+      <ul>
         <li><a href="#">Quick Links</a></li>
         <li><a href="#">Delivery</Menu></a></li>
         <li><a href="#">Season's Gifting</a></li>
@@ -205,35 +246,35 @@
         <li><a href="#">Customer Service</a></li>
         <li><a href="#">FAQs</a></li>
         <li><a href="#">Privacy Policy</a></li>
-    </ul>
-    <ul class="footlogo">
-      <li><p>SOCIAL MEDIA</p>
-      <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-      <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-      <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+      </ul>
+      <ul class="footlogo">
+        <li>
+          <p>SOCIAL MEDIA</p>
+        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
 
-  </ul>
-</div>
-  <hr/>
-  <div class="End">
-    <ul>
-      <li><a href="#">Web Accessibility</a></li>
-      <li><a href="#">Privecy Statement</Menu></a></li>
-      <li><a href="#">Terms of Use</a></li>
-      <li><a href="#">Contact Us</a></li>
-  </ul>
-  <p>@2023 Starbucks Coffee Company. All rights reserved</p>
+      </ul>
+    </div>
+    <hr />
+    <div class="End">
+      <ul>
+        <li><a href="#">Web Accessibility</a></li>
+        <li><a href="#">Privecy Statement</Menu></a></li>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <p>@2023 Starbucks Coffee Company. All rights reserved</p>
 
-  </div>
+    </div>
 
   </footer>
   <script src="./index.js"></script>
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
