@@ -201,38 +201,38 @@ header ul li a:hover{
 }
 
 
-#imgsl span {
-    /* h1 tag mai span tag ko color  */
-    color: #017143;
-    font-weight: 900;
-}
+    #imgsl span {
+        /* h1 tag mai span tag ko color  */
+        color: #017143;
+        font-weight: 900;
+    }
 
-#menucard span {
-    color: #017143;
-    font-weight: 900;
-}
+    #menucard span {
+        color: #017143;
+        font-weight: 900;
+    }
 
-#menucard {
-    /* h1  */
-    padding-left: 3.7rem;
-    color: #333;
-    font-size: 4rem;
-    line-height: 1.4em;
-    font-weight: 700;
-    padding-top: 5px;
+    #menucard {
+        /* h1  */
+        padding-left: 3.7rem;
+        color: #333;
+        font-size: 4rem;
+        line-height: 1.4em;
+        font-weight: 700;
+        padding-top: 5px;
 
-}
+    }
 
-#imgsl {
-    /* h1 */
-    padding-left: 3.7rem;
-    color: #333;
-    font-size: 4rem;
-    line-height: 1.4em;
-    font-weight: 700;
-    padding-top: 5px;
+    #imgsl {
+        /* h1 */
+        padding-left: 3.7rem;
+        color: #333;
+        font-size: 4rem;
+        line-height: 1.4em;
+        font-weight: 700;
+        padding-top: 5px;
 
-}
+    }
 
 .cardBox {
     margin: auto;
@@ -290,7 +290,7 @@ header ul li a:hover{
 }
 
 .contactBox .frombox1 {
-    width: 60%;
+    width: 80%;
     height: auto;
     padding: 20px;
     background-color: skyblue;
@@ -350,7 +350,7 @@ header ul li a:hover{
 
 .contactBox .mapBox #sideBox {
     position: absolute;
-    height: 200px;
+    height: 350px;
     width: 100px;
     background-color: blue;
     z-index: 1;
@@ -364,10 +364,10 @@ header ul li a:hover{
     content: "";
     position: absolute;
     height: 100%;
-    width: 50%;
+    width: 70%;
     background-color: rgb(72, 136, 232);
-    top: -30px;
-    right: -30px;
+    top: -20px;
+    right: -20px;
     z-index: -1;
 }
 
@@ -445,6 +445,21 @@ header ul li a:hover{
 
 .End p {
     color: #fff;
+}
+@media(max-width:1024px)
+{
+    .sliderBGbox {
+        height: 640px;
+        width: 100%;
+       
+    }
+    
+    .imgSlider1 {
+        height: auto;
+        width: 970px;
+    }
+
+
 }
 
 @media(max-width: 991px) {
@@ -536,7 +551,11 @@ header ul li a:hover{
         max-width: 40px;
     }
 
+    
+
+
 }
+
 
 @media(max-width:925px) {
     .Lset {
@@ -545,6 +564,16 @@ header ul li a:hover{
         flex-direction: column;
         /* align-items: center; */
 
+    }
+    .sliderBGbox {
+        height: 640px;
+        width: 100%;
+       
+    }
+    
+    .imgSlider1 {
+        height: auto;
+        width: 880px;
     }
 
     .map1 {
@@ -578,16 +607,22 @@ header ul li a:hover{
     }
 
 }
+@media(max-width:925px)
+{
+    .sliderBGbox {
+        height: 520px;
+        width: 100%;
+       
+    }
+    
+    .imgSlider1 {
+        height: auto;
+        width: 700px;
+    }
+}
 
 @media(max-width:658px) {
-    h1 {
-        padding-left: 3.2rem;
-        color: #333;
-        font-size: 3rem;
-        line-height: 1.4em;
-        font-weight: 700;
-        padding-top: 5px;
-    }
+   
 
     .Fbox {
         margin-top: 1.9rem;
@@ -625,5 +660,63 @@ header ul li a:hover{
         display: flex;
         flex-wrap: wrap;
     }
+
+}
+@media(max-width:428px){
+   
+   
+    #imgsl span {
+        /* h1 tag mai span tag ko color  */
+        font-weight: 800;
+    }
+    
+    #menucard span {
+        font-weight: 800;
+    }
+    
+    #menucard {
+        /* h1  */
+        font-size: 2rem;
+        line-height: 1.4em;
+        font-weight: 400;
+    
+    }
+    
+    #imgsl {
+        /* h1 */
+        font-size: 2rem;
+        line-height: 1.4em;
+        font-weight: 400; 
+    }
+    .sliderBGbox {
+        height: 300px;
+        width: 100%;
+       
+    }
+    
+    .imgSlider1 {
+        height: auto;
+        width: 380px;
+    }
+
+    .contactBox .frombox1 {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+    /* map */
+    .contactBox .mapBox .mapBox1 {
+        height: 100%;
+        width: 70%;
+    }
+    
+    
+    
+    .contactBox .mapBox #map::after { 
+        height: 100%;
+        width: 80%;
+        top: -20px;
+        right: -20px;
+      }
 
 }
